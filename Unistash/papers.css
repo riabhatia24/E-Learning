@@ -1,0 +1,118 @@
+html, body {
+background-image: url(finalc.jpg);
+    background-color: #cccccc;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1{
+  text-align: center;
+  margin-top:0px;
+  color: white;
+
+}
+
+/* define a fixed width for the entire menu */
+.navigation {
+  width: 800px;
+  
+  margin-top:0px;
+  display: inline-block;
+  
+  height: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin-left:350px;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  background-color:  rgba(255,248,220,0.7);
+  text-decoration: none;
+
+  color: #000;
+  border-radius:5px;
+  border: 2px solid black;
+
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height:6000px;
+}
+
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #999;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #666;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 1s ease-out;
+}
+
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.subsub a {
+  background-color: #999;
+}
+
+/* hover behaviour for links inside .submenu */
+.subsub a:hover {
+  background-color: #666;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.subsub {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 1s ease-out;
+}
+.subdet{
+display: none;}
+.clear{
+margin-left: 700px;
+
+
+}

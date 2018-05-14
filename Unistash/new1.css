@@ -1,0 +1,90 @@
+body{
+
+    background-image: url(study.jpg);
+    background-color: #cccccc;
+    background-size: cover;
+margin-top:0px;
+padding:0px;
+    
+
+}
+
+
+
+.navi{
+	width: 100%;
+	float:right;
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 80px;
+	margin-top:0px;
+	padding: 0px;
+border-radius: 3px
+	
+}
+
+
+
+
+nav{
+	float: right;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 20px;
+	padding-right: 79px;
+	padding-top: 10px;
+transition: 0.8s all;
+}
+
+nav ul li:hover{
+	background-color:#f39d1a;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 50px;
+	font-family: georgia;
+	font-size: 18px;
+}
+
+
+#menu ul{
+	list-style:none;
+
+}
+
+#menu ul li{
+	background-color: rgba(0, 0, 0, 0.9);
+	border: 1px solid white;
+	width:520px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	position: relative;
+	border-radius: 10px;
+	margin-top:125px;
+	margin-left: 480px;
+
+}
+
+#menu ul li a
+{ text-decoration: none;
+color: white;
+display:block;}
+
+#menu ul li a:hover{
+	background-color:green;
+}
+
+#menu ul ul{
+	position: absolute;
+	display: none;
+	margin-left: 490px;
+	margin-top: -36px;
+}
+#menu ul li:hover > ul{
+	display:block;
+}
